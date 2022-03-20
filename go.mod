@@ -2,4 +2,4 @@ module github.com/kaatinga/krendel
 
 go 1.18
 
-require github.com/kaatinga/assets v1.2.1
+require github.com/dustin/go-humanize v1.0.0

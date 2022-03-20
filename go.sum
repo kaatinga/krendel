@@ -1,2 +1,2 @@
-github.com/kaatinga/assets v1.2.1 h1:89rMJC0FTe1FaH5MCnGixQxi2PWbtnBYJrY3+iynPDk=
-github.com/kaatinga/assets v1.2.1/go.mod h1:PCWy68NCavR/bBE38zIvQnoYimdNZiKojhUP2/bWP6M=
+github.com/dustin/go-humanize v1.0.0 h1:VSnTsYCnlFHaM2/igO1h6X3HA71jcobQuxemgkq4zYo=
+github.com/dustin/go-humanize v1.0.0/go.mod h1:HtrtbFcZ19U5GC7JDqmcUSB87Iq5E25KnS6fMYU6eOk=
