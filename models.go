@@ -2,6 +2,9 @@ package krendel
 
 type Int64 int64
 
+// Separator can be carefully used to set separator character.
+var Separator byte = ' '
+
 func (v Int64) String() string {
 	if v&^0b111 == 0 {
 		return string([]byte{byte(v) + 48})
@@ -27,7 +30,7 @@ func (v Int64) String() string {
 		currentIndex--
 		if counter == 2 {
 			counter = 0
-			output[currentIndex] = ','
+			output[currentIndex] = Separator
 			currentIndex--
 		} else {
 			counter++
