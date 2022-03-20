@@ -13,10 +13,8 @@ func (v Int64) String() string {
 	count := Digits(v)
 
 	count += (count - 1) / 3
-	var minus bool
 	if v < 0 {
 		v = 0 - v
-		minus = true
 		count++
 	}
 	output := make([]byte, count)
@@ -37,7 +35,7 @@ func (v Int64) String() string {
 	}
 
 	output[currentIndex] = byte(v) + 48
-	if minus {
+	if currentIndex == 1 {
 		output[0] = '-'
 	}
 	return string(output)
