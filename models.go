@@ -13,7 +13,7 @@ func (v Int64) String() string {
 		return "-9,223,372,036,854,775,808"
 	}
 	// Counting the number of digits.
-	count := Digits(v)
+	count := v.digits()
 
 	count += (count - 1) / 3
 	if v < 0 {

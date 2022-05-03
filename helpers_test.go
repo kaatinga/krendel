@@ -16,8 +16,8 @@ func TestDigits(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(strconv.Itoa(int(tt.number)), func(t *testing.T) {
-			if got := Digits(tt.number); got != tt.want {
-				t.Errorf("Digits() = %v, want %v", got, tt.want)
+			if got := tt.number.digits(); got != tt.want {
+				t.Errorf("digits() = %v, want %v", got, tt.want)
 			}
 		})
 	}
