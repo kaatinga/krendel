@@ -5,6 +5,10 @@ type Int64 int64
 // Separator can be carefully used to set separator character.
 var Separator byte = ' '
 
+func (v Int64) Int64() int64 {
+	return int64(v)
+}
+
 func (v Int64) String() string {
 	if v&^0b111 == 0 {
 		return string([]byte{byte(v) + 48})
